@@ -199,6 +199,7 @@
 		5CA61E876F88B60D291B2D04CC2EE9DE /* SerialDispatchQueueScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6268EB1EED167AD96514EA1C8BBFDFE4 /* SerialDispatchQueueScheduler.swift */; };
 		5D0894C65BD61FB3D16161F129781FAB /* RateObservingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799872255560A65953CB8AC8F949C1DB /* RateObservingService.swift */; };
 		5DC61BF341DDA244F9FBDF64E154D22D /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB2B2AB7C34E5A342B2703BBFA8A44A /* Queue.swift */; };
+		5E24442F23C8713000E321C6 /* CachingPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E24442E23C8713000E321C6 /* CachingPlayerItem.swift */; };
 		5E2A3FA6C4DE7E8BF700AE422C3ADC93 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6019FD99A570951160B042AEDE14B /* Map.swift */; };
 		5F97286B0066D2E425866F34847C6F0D /* _RXKVOObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = D512F655B1C285BD6571E65CBC5D40EF /* _RXKVOObserver.m */; };
 		5FAC89F5E89A9F2B82A638EA08EE3915 /* PausedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43ED678871D0D8F2B8D332C59E26C9F /* PausedState.swift */; };
@@ -807,6 +808,7 @@
 		5CB9A16F2A80A40B15E416A9F5BF1836 /* UIApplication+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+Rx.swift"; path = "RxCocoa/iOS/UIApplication+Rx.swift"; sourceTree = "<group>"; };
 		5CF50B2AF32A5DBC937B2F9454B04C31 /* Reduce.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reduce.swift; path = RxSwift/Observables/Reduce.swift; sourceTree = "<group>"; };
 		5DA4A0D3797DD5F59CBAECA07313B209 /* UISegmentedControl+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISegmentedControl+Rx.swift"; path = "RxCocoa/iOS/UISegmentedControl+Rx.swift"; sourceTree = "<group>"; };
+		5E24442E23C8713000E321C6 /* CachingPlayerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachingPlayerItem.swift; sourceTree = "<group>"; };
 		5E8C5137DFE40C696634243F63D3D4F3 /* ModernAVPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModernAVPlayer.swift; path = Sources/Core/ModernAVPlayer.swift; sourceTree = "<group>"; };
 		5FBFB4B46D34ED9C83433651988C4B7A /* Platform.Linux.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Platform.Linux.swift; path = Platform/Platform.Linux.swift; sourceTree = "<group>"; };
 		5FCB754BFC2FE8FE438241624F0498AE /* SharedSequence+Operators+arity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SharedSequence+Operators+arity.swift"; path = "RxCocoa/Traits/SharedSequence/SharedSequence+Operators+arity.swift"; sourceTree = "<group>"; };
@@ -1232,6 +1234,7 @@
 			children = (
 				5E8C5137DFE40C696634243F63D3D4F3 /* ModernAVPlayer.swift */,
 				33E514D699BBF3F9EEFC4D5A39BB9C29 /* ModernAVPlayerDelegate.swift */,
+				5E24442D23C8711200E321C6 /* Caching */,
 				D5B1B71F3BC8A5EED62704295BA11915 /* Components */,
 				AE4E65EB37B0D1C95E3250C960A4646F /* Services */,
 				86D7B8DE37537C202D67B8A802B42CC2 /* State */,
@@ -1329,6 +1332,14 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/RxCocoa";
+			sourceTree = "<group>";
+		};
+		5E24442D23C8711200E321C6 /* Caching */ = {
+			isa = PBXGroup;
+			children = (
+				5E24442E23C8713000E321C6 /* CachingPlayerItem.swift */,
+			);
+			path = Caching;
 			sourceTree = "<group>";
 		};
 		602DB00B4D2992FE256EDCEBE81BBC1D /* Support Files */ = {
@@ -2683,6 +2694,7 @@
 				5D0894C65BD61FB3D16161F129781FAB /* RateObservingService.swift in Sources */,
 				534421A8C775C40C7CFCA006ACDA083F /* ReachabilityService.swift in Sources */,
 				04D18436644D8575386890FE88F82FD4 /* RouteAudioService.swift in Sources */,
+				5E24442F23C8713000E321C6 /* CachingPlayerItem.swift in Sources */,
 				B2BE0FD563800DEEEFD62164AC8A7B80 /* StoppedState.swift in Sources */,
 				891329F98D7FBEBF22582C99B36DF8E0 /* TimerFactory.swift in Sources */,
 				E67927CEE451D7A5A4B478FC86FF91E2 /* URLSessionDataTaskFactory.swift in Sources */,
